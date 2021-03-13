@@ -1,0 +1,87 @@
+:root {
+    --selection-color: #b5d7ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-y: visible;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.app {
+    -webkit-app-region: no-drag;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.add-space {
+    padding-top: 25px;
+}
+
+::selection {
+    background-color: var(--selection-color);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #303030;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus, button:focus, select:focus {
+    outline: none;
+}
+
+img, p {
+    -webkit-user-drag: none;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+ul {
+    list-style-type: none;
+}
